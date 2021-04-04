@@ -1,0 +1,117 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage Minecraft</title>
+    <link rel="shortcut icon" href=".\img\logo.png" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom_box.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Que pensez vous de Minecraft, le jeu de la décennie ?</h2>
+        <form method="GET">
+            <div class="row">
+                <div class="left-col">
+                    <label for="name">* Nom : </label>
+                </div>
+                <div class="right-col">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Votre nom"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="email">* Email : </label>
+                </div>
+                <div class="right-col">
+                    <input type="email" name="email" id="email" class="input-field" required placeholder="Votre email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="age">* Age : </label>
+                </div>
+                <div class="right-col">
+                    <input type="number" name="age" id="number" class="input-field" placeholder="Age" min="1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="currentPos">Selon vous, quel est votre niveau dans Minecraft en general :</label>
+                </div>
+                <div class="right-col">
+                    <select name="level">
+                        <option disabled selected value="defaut">- Sélectionnez une option -</option>
+                        <option value="nope">Jamais entendu parler</option>
+                        <option value="noob">Je sais seulement crafter des planches</option>
+                        <option value="cheater">J'utilise X-ray</option>
+                        <option value="notbad">J'ai 64 blocks de diamant</option>
+                        <option value="pro">L'ender dragon... C'est de l'eau</option>
+                        <option value="god">Je detient le record du monde de speedrun</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="userRating">* À quel point êtes vous susceptible de recommander ce jeu à un ami ?</label>
+                </div>
+                <div class="right-col">
+                    <ul>
+                        <li class="radio"><label class="radio-label"><input name="radio-buttons" value="1" type="radio"
+                                    class="userRatings">Très fortement<span class="checkmark"></span></label></li>
+                        <li class="radio"><label class="radio-label"><input name="radio-buttons" value="2" type="radio"
+                                    class="userRatings">Pas sûr<span class="checkmark"></span></label></li>
+                        <li class="radio"><label class="radio-label"><input name="radio-buttons" value="3" type="radio"
+                                    class="userRatings">Pas du tout, c'est de la merde<span class="checkmark"></span></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="most-like">Qu'est ce que vous aimez le plus dans Minecraft ?</label>
+                </div>
+                <div class="right-col">
+                    <select name="pref">
+                        <option disabled selected value="defaut">- Sélectionnez une option -</option>
+                        <option value="driving">L'aventure (marcher pendant 20000 blocks)</option>
+                        <option value="cup">Construir des villes</option>
+                        <option value="unlockables">Faire des machines de ouf en redstone pour detruir des montagnes</option>
+                        <option value="buying">Miner des diamants en ligne droite</option>
+                        <option value="superiority">Eclater mes amis en PVP</option>
+                        <option value="sleep">Le manque de sommeil à force de jouer sur hypixel</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="preferences">Choses à améliorer dans le futur<br>(Cocher toutes celles qui vous semblent
+                        intéressantes) :
+                    </label>
+                </div>
+                <div class="right-col">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox"><label class="check-label"><input name="prefer" value="1" type="checkbox" class="userRatings">Des textures en 4K<span class="checkmark2"></span></label></li>
+                        <li class="checkbox"><label class="check-label"><input name="prefer" value="2" type="checkbox" class="userRatings">Lier Bedrock et Java<span class="checkmark2"></span></label></li>
+                        <li class="checkbox"><label class="check-label"><input name="prefer" value="4" type="checkbox" class="userRatings">Faire un nouveau skin pour steve<span class="checkmark2"></span></label></li>
+                        <li class="checkbox"><label class="check-label"><input name="prefer" value="7" type="checkbox" class="userRatings">Mange tes morts avec ton jeu de merde<span class="checkmark2"></span></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="comments">Des commentaires / suggestions ?</label>
+                </div>
+                <div class="right-col">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                        placeholder="Entrez votre commentaire ici"></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>

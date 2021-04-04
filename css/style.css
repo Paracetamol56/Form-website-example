@@ -1,0 +1,160 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+@font-face {
+  font-family: MinecraftRegular;
+  src: url("../fonts/F77MinecraftRegular-0VYv.ttf");
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "PT Sans";
+  font-weight: 400;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transform: translate3d();
+}
+
+h1#title {
+  font-family: MinecraftRegular;
+  line-height: 175%;
+}
+
+#container {
+  background-color: #efefefe5;
+  backdrop-filter: blur(5px);
+  margin: 250px auto 0px auto;
+  width: 80%;
+  max-width: 1000px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.left-col {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.right-col {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: center;
+}
+
+.input-field {
+  height: 30px;
+  width: 280px;
+  padding: 8px;
+  margin: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #c0c0c0;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-field:hover {
+  border: 1px solid #7dbb35;
+  transition: all 0.2s ease-in;
+}
+
+ul {
+  list-style: none;
+}
+
+#userAge {
+  width: 40px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #7dbb35;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+  transition: all 0.2s ease-in-out;
+}
+
+#submit:hover {
+  background-color: #89cc3b;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
+}
+
+select {
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  background-color: #f7f7f7;
+  border: 1px solid #c0c0c0;
+  transition: all 0.2s ease-in-out;
+}
+
+select:hover {
+  border: 1px solid #7dbb35;
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .row {
+    width: 100%;
+    text-align: left;
+  }
+  .right-col {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
